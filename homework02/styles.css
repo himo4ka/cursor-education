@@ -1,0 +1,28 @@
+body {
+    background: rgb(238, 222, 222);
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 60px;
+}
+
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.list-name {
+    font-family: 'Roboto Mono', monospace;
+}
