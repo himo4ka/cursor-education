@@ -1,0 +1,311 @@
+:root {
+    --main-color: #FFFFFF;
+    --second-color: #000000;
+    --accent-color: #ED4C5C;;
+    --footer-color: #FAFAFA;
+    --body-color: #ffffff;
+    
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1100px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--accent-color);
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.header-container {
+    display: flex;
+    gap: 125px;
+}
+
+.header-title {
+    width: 445px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.19;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.header-text {
+    width: 445px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--main-color);
+    margin-bottom: 24px;
+}
+
+.header-list {
+    display: flex;
+    gap: 23px;
+}
+
+.header-icon {
+    fill: #FFFFFF;
+    }
+
+.header-icon:hover {
+    fill: black;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-picture {
+    width: 445px;
+    position: absolute;
+    z-index: 1;
+}
+
+.second-picture {
+    width: 383px;
+    position: relative;
+    left: -45px;
+    z-index: 0;
+}
+
+.third-picture {
+    width: 383px;
+    position: relative;
+    z-index: 0;
+    right: 275px;
+}
+
+/* Contacts */
+
+.contacts {
+    padding-top: 117px;
+    padding-bottom: 123px;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 114px;
+}
+
+/* .contacts-text-container {
+    max-width: 445px;
+} */
+
+.contacts-main {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.19;
+    margin-bottom: 42px;
+}
+
+.contacts-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 434px;
+}
+
+.name-form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+#name, #surname {
+    width: 255px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+
+.contacts-service {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+#tel, #sel {
+    width: 540px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+
+input, select {
+    box-sizing: border-box;
+    padding-left: 31px;
+}
+
+select {
+    padding-right: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: rgba(19, 39, 67, 0.5);
+    background-color: transparent;
+    appearance: none;
+    background: url(./images/ChevronDown.svg) no-repeat right;
+    background-position-x: calc(100% - 20px);
+}
+
+#name::placeholder,
+#surname::placeholder,
+#tel::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+.contacts-btn {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: var(--main-color);
+    width: 160px;
+    height: 50px;
+    background: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
+    margin-top: 27px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--footer-color);
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-adress {
+    margin-right: 105px;
+}
+
+.footer-services {
+    margin-right: 175px;
+}
+
+.footer-contacts {
+    margin-right: 160px;
+}
+
+.footer-main {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #101010;
+    margin-bottom: 33px;
+}
+
+.footer-adress-list {
+    margin-bottom: 135px;
+}
+
+.footer-adress-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #101010;
+}
+
+.footer-copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: #101010;
+}
+
+.footer-services-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-contacts-list {
+    margin-bottom: 20px;
+}
+
+.footer-contacts-item:first-child {
+    margin-bottom: 11px;
+}
+
+.footer-mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: #101010;
+}
+
+.footer-tel {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: #121212;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-icon:hover {
+    fill: var(--accent-color);
+}
