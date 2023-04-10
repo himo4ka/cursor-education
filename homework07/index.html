@@ -10,32 +10,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Playfair+Display:wght@400;500;600;700;900&family=Roboto&family=Rochester&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <div class="header-main">
+        <div class="header-main container">
             <a href="#" class="header-logo link">Lady shop</a>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">
+            <div class="header-soc">
+                <ul class="list header-soc-list">
+                    <li class="header-soc-item">
+                        <a href="#" class="link header-soc-link">
                             <svg class="header-soc-icon" width="18" height="14">
                                 <use href="./img/symbol-defs.svg#icon-twitter">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li class="header-soc-item">
+                        <a href="#" class="link header-soc-link">
                             <svg class="header-soc-icon" width="16" height="16">
                                 <use href="./img/symbol-defs.svg#icon-instagram">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li class="header-soc-item">
+                        <a href="#" class="link header-soc-link">
                             <svg class="header-soc-icon" width="10" height="18">
                                 <use href="./img/symbol-defs.svg#icon-facebook">
                                 </use>
@@ -45,9 +46,9 @@
                 </ul>   
             </div>
             <div>
-                <ul>
+                <ul class="list header-user-list">
                     <li>
-                        <a href="">
+                        <a href="#" class="link header-user-link">
                             <svg class="header-user-section-icon" width="20" height="19">
                                 <use href="./img/symbol-defs.svg#icon-search">
                                 </use>
@@ -55,7 +56,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#" class="link header-user-link">
                             <svg class="header-user-section-icon" width="18" height="21">
                                 <use href="./img/symbol-defs.svg#icon-cart">
                                 </use>
@@ -63,7 +64,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#" class="link header-user-link">
                             <svg class="header-user-section-icon" width="28" height="28">
                                 <use href="./img/symbol-defs.svg#icon-users">
                                 </use>
@@ -73,69 +74,332 @@
                 </ul>
             </div>
         </div>
-        <nav>
-            <ul>
+        <div class="header-line"></div>
+        <nav class="header-navigation container">
+            <ul class="list header-nav-list">
                 <li>
-                    <a href="" class="link">Home</a>
+                    <a href="#" class="link header-nav-link">Home</a>
                 </li>
                 <li>
-                    <a href="" class="link">Shop</a>
+                    <a href="#" class="link header-nav-link">Shop</a>
                 </li>
                 <li>
-                    <a href="" class="link">Blog</a>
+                    <a href="#" class="link header-nav-link">Blog</a>
                 </li>
                 <li>
-                    <a href="" class="link">Contacts</a>
+                    <a href="#" class="link header-nav-link">Contacts</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main class="hero">
-        <h1>Admire Stylish Dresses & Looks</h1>
-        <p>If we wanted to build a human-level tool to offer automated outfit advice, we needed to understand people’s fashion taste.</p>
-        <button>Show more</button>
-    </main>
-    <section class="collections">
-
-    </section>
-    <section>
-        <h2>You may like</h2>
-    </section>
-    <section class="contacts">
-        <h2>Contacts</h2>
-    </section>
-    <footer>
-        <div>
-
+        <div class="container">
+            <h1 class="main-title">Admire Stylish Dresses & Looks</h1>
+            <p class="main-text">If we wanted to build a human-level tool to offer automated outfit advice, we needed to understand people’s fashion taste.</p>
+            <button class="hero-btn">Show more</button>
         </div>
-        <div>
-            <p>© Lady shop all rigths reserved</p>
-            <ul>
-                <li>
-                    <a href="">
-                        <svg class="footer-soc-icon" width="18" height="14">
-                            <use href="./img/symbol-defs.svg#icon-twitter">
+    </main>
+
+    <section class="collections container">
+        <div class="collections-popular">
+            <h2 class="collections-title light">Women Collection</h2>
+            <p class="collections-text light">Spring 2022</p>
+            <button class="collections-btn">Popular</button>
+        </div>
+        <div class="collections-spring">
+            <p class="collections-text dark">Spring 2022</p>
+            <h2 class="collections-title dark">Women Collection</h2>
+        </div>
+        <div class="collections-dresses">
+            <p class="collections-text light">New</p>
+            <h2 class="collections-title light">Dresses</h2>
+        </div>
+        <div class="collections-jackets">
+            <p class="collections-text dark">New</p>
+            <h2 class="collections-title dark">Denim Jackets</h2>
+        </div>
+    </section>
+
+    <section class="slider container">
+        <div class="photo-container">
+            <div class="slider-card">
+                <img src="./img/slider1.png" alt="Black shoes">
+                <p class="slider-text">Louis Vouiton</p>
+            </div>
+            <div class="slider-card">
+                <img src="./img/slider2.png" alt="Dress">
+                <p class="slider-text">Dolce&Gabbana</p>
+            </div>
+            <div class="slider-card">
+                <img src="./img/slider3.png" alt="Clutch">
+                <p class="slider-text">Gucci</p>
+            </div>
+            <div class="slider-card">
+                <img src="./img/slider4.png" alt="Black dress">
+                <p class="slider-text">Dries van Noten</p>
+            </div>
+        </div>
+        <a href="#" class="link">
+            <svg class="slider-icon" width="84" height="12">
+                <use href="./img/symbol-defs.svg#icon-dots">
+                </use>
+            </svg>
+        </a>
+    </section>
+
+    <section class="container shopping">
+        <h2 class="shopping-title">You may like</h2>
+        <div class="shopping-container">
+            <div class="shopping-card">
+                <div class="shopping-favorite">
+                    <a class="favorite-link link" href="#">
+                        <svg class="favorite-icon" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-balloon-heart">
                             </use>
                         </svg>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg class="footer-soc-icon" width="16" height="16">
-                            <use href="./img/symbol-defs.svg#icon-instagram">
+                </div>
+                <img src="./img/Black-dress.png" alt="Black dress" width="350">
+                <div class="card-info-main">
+                    <h3 class="shopping-card-name">Women's black vest Gucci</h3>
+                    <p class="shopping-card-description">This is a wonderful black vest, which is well suited for parties and also great…</p>
+                </div>
+                <div class="shopping-customer-info">
+                    <p class="shopping-card-price">$ 715</p>
+                    <button class="shopping-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="shopping-card">
+                <div class="shopping-favorite">
+                    <a class="favorite-link link" href="#">
+                        <svg class="favorite-icon" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-balloon-heart">
                             </use>
                         </svg>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg class="footer-soc-icon" width="10" height="18">
-                            <use href="./img/symbol-defs.svg#icon-facebook">
+                </div>
+                <img src="./img/Red-dress.png" alt="Red dress" width="350">
+                <div class="card-info-main">
+                    <h3 class="shopping-card-name">Women's black vest Gucci</h3>
+                    <p class="shopping-card-description">This is a wonderful black vest, which is well suited for parties and also
+                        great…</p>
+                </div>
+                <div class="shopping-customer-info">
+                    <p class="shopping-card-price">$ 715</p>
+                    <button class="shopping-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="shopping-card">
+                <div class="shopping-favorite">
+                    <a class="favorite-link link" href="#">
+                        <svg class="favorite-icon" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-balloon-heart">
                             </use>
                         </svg>
+                    </a>
+                </div>
+                <img src="./img/Silver-dress.png" alt="Silver dress" width="350">
+                <div class="card-info-main">
+                    <h3 class="shopping-card-name">Women's black vest Gucci</h3>
+                    <p class="shopping-card-description">This is a wonderful black vest, which is well suited for parties and also
+                        great…</p>
+                </div>
+                <div class="shopping-customer-info">
+                    <p class="shopping-card-price">$ 715</p>
+                    <button class="shopping-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="shopping-card">
+                <div class="shopping-favorite">
+                    <a class="favorite-link link" href="#">
+                        <svg class="favorite-icon" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-balloon-heart">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+                <img src="./img/Black-dress.png" alt="Black dress" width="350">
+                <div class="card-info-main">
+                    <h3 class="shopping-card-name">Women's black vest Gucci</h3>
+                    <p class="shopping-card-description">This is a wonderful black vest, which is well suited for parties and also
+                        great…</p>
+                </div>
+                <div class="shopping-customer-info">
+                    <p class="shopping-card-price">$ 715</p>
+                    <button class="shopping-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="shopping-card">
+                <div class="shopping-favorite">
+                    <a class="favorite-link link" href="#">
+                        <svg class="favorite-icon" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-balloon-heart">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+                <img src="./img/Red-dress.png" alt="Red dress" width="350">
+                <div class="card-info-main">
+                    <h3 class="shopping-card-name">Women's black vest Gucci</h3>
+                    <p class="shopping-card-description">This is a wonderful black vest, which is well suited for parties and also
+                        great…</p>
+                </div>
+                <div class="shopping-customer-info">
+                    <p class="shopping-card-price">$ 715</p>
+                    <button class="shopping-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="shopping-card">
+                <div class="shopping-favorite">
+                    <a class="favorite-link link" href="#">
+                        <svg class="favorite-icon" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-balloon-heart">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+                <img src="./img/Silver-dress.png" alt="Silver dress" width="350">
+                <div class="card-info-main">
+                    <h3 class="shopping-card-name">Women's black vest Gucci</h3>
+                    <p class="shopping-card-description">This is a wonderful black vest, which is well suited for parties and also
+                        great…</p>
+                </div>
+                <div class="shopping-customer-info">
+                    <p class="shopping-card-price">$ 715</p>
+                    <button class="shopping-btn">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts container">
+        <h2 class="contacts-title">Contacts</h2>
+        <div class="contacts-menu">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d100970.09035444488!2d-122.49237347330603!3d37.735746067062294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDQ0JzE4LjUiTiAxMjLCsDI4JzI1LjAiVw!5e0!3m2!1suk!2sua!4v1681051277956!5m2!1suk!2sua"
+                width="1086" height="511" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="contacts-map">
+            </iframe>
+            <ul class="list contacts-list">
+                <li class="contacts-item">
+                    <a href="#" class="link contacts-link">
+                        <svg class="contacts-icon" width="40" height="40">
+                            <use href="./img/symbol-defs.svg#icon-mail">
+                            </use>
+                        </svg>Email
+                        
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a href="#" class="link contacts-link">
+                        <svg class="contacts-icon" width="40" height="40">
+                            <use href="./img/symbol-defs.svg#icon-location">
+                            </use>
+                        </svg>Address
+                        
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a href="#" class="link contacts-link">
+                        <svg class="contacts-icon" width="40" height="40">
+                            <use href="./img/symbol-defs.svg#icon-phone">
+                            </use>
+                        </svg>+38 094 345 21 21
+                        
                     </a>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="container footer-info-group">
+                <div>
+                    <a href="#" class="footer-logo link">Lady shop</a>
+                    <p class="footer-info-text">Fashion is a popular
+                    aesthetic expression at a particular time, place and in a specific context, especially in clothing, footwear, lifestyle,
+                    accessories, makeup.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="footer-info-title">Hot links</h2>
+                    <ul class="list footer-info-list">
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Home</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Shop</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Blog</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer-info-title">More info</h2>
+                    <ul class="list footer-info-list">
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Hot it works</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">About us</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Decline rules</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer-info-title">Customer care</h2>
+                    <ul class="list footer-info-list">
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">FAQ</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" class="link footer-info-link">Discout system</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container footer-copyright-group">
+                <p class="footer-copyright-text">© Lady shop all rigths reserved</p>
+                <ul class="list footer-soc-list">
+                    <li>
+                        <a href="#" class="link footer-soc-link">
+                            <svg class="footer-soc-icon" width="18" height="14">
+                                <use href="./img/symbol-defs.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link footer-soc-link">
+                            <svg class="footer-soc-icon" width="16" height="16">
+                                <use href="./img/symbol-defs.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link footer-soc-link">
+                            <svg class="footer-soc-icon" width="10" height="18">
+                                <use href="./img/symbol-defs.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
